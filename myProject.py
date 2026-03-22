@@ -44,8 +44,7 @@ risk_score = (
     0.20 * scaled_input[:,3] +
     0.10 * scaled_input[:,4]
 ) * 100
-
-risk_score = round(float(risk_score), 1)
+risk_score = round(float(risk_score[0]), 1)
 
 # Show result
 st.divider()
